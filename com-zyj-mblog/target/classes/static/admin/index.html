@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="app" xmlns:th="http://www.thymeleaf.org">
+<head th:include="resources/common/common_header :: common_header">
+    <!-- <script type="text/javascript">
+         window.UEDITOR_HOME_URL = '/resources/assets/vendors/ueditor/';
+     </script>-->
+</head>
+<body class="nav-md" th:inline="javascript">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a href="/index" class="site_title"><span>Mtons</span></a>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <br/>
+
+                <!-- sidebar menu -->
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+                        <h3>系统菜单</h3>
+                        <ul class="nav side-menu">
+                            <li><a href="/"><i class="fa fa-home"></i> Home</a>
+                            </li>
+
+                            <li th:each="menuList:${menuList}">
+                                <a th:href="${menuList.url}" nav="1"><i th:class="${menuList.icon}"></i><span th:text="${menuList.name}"></span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /sidebar menu -->
+            </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <nav>
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
+                               aria-expanded="false">
+                                <img src="/resources/assets/images/ava/default.png" alt="">admin
+                                <span class=" fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                <li><a href="/account/profile"> Profile</a></li>
+                                <li><a href="/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+            <div>
+
+                <div class="page-title">
+                    <div class="title_left">
+                        <h3>admin <small> 欢迎使用Mblog</small></h3>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>系统状态</h2>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content" style="height: 231px;">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <td>内存消耗:</td>
+                                        <td th:text="${usedMemory}+'M/'+${totalMemory}+'M'">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:120px;">操作系统:</td>
+                                        <td th:text="${os}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:120px;">JDK版本:</td>
+                                        <td th:text="${javaVersion}"></td>
+                                    </tr>
+                                    <input type="hidden" th:value="${memPercent}" id="data">
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>内存使用情况</h2>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <canvas id="canvas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div th:include="resources/common/common_foot :: foot"></div>
+
+                <script>
+                    $(function () {
+                        var ctx = document.getElementById("canvas");
+                        var data = {
+                            labels: [
+                                "可用",
+                                "已用"
+                            ],
+                            datasets: [{
+                                data: [$('#data').val(), 100-parseInt($('#data').val())],
+                                backgroundColor: [
+                                    "#455C73",
+                                    "#9B59B6"
+                                ],
+                                hoverBackgroundColor: [
+                                    "#34495E",
+                                    "#B370CF"
+                                ]
+                            }]
+                        };
+
+                        var canvasDoughnut = new Chart(ctx, {
+                            type: 'doughnut',
+                            tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+                            data: data
+                        });
+                    })
+                </script>
+            </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                Mblog - Powered By <a href="http://mtons.com/?copyright" target="_blank">Mtons</a>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+    </div>
+    <!-- Custom Theme Scripts -->
+    <script src="/resources/assets/admin/js/custom.min.js"></script>
+    <script src="/resources/assets/admin/js/app.data.js"></script>
+</body>
+</html>

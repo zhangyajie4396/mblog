@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/com-zyj-browser/com-zyj-browser.iml" filepath="$PROJECT_DIR$/com-zyj-browser/com-zyj-browser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com-zyj-core/com-zyj-core.iml" filepath="$PROJECT_DIR$/com-zyj-core/com-zyj-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com-zyj-mblog/com-zyj-mblog.iml" filepath="$PROJECT_DIR$/com-zyj-mblog/com-zyj-mblog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com-zyj-parent/com-zyj-parent.iml" filepath="$PROJECT_DIR$/com-zyj-parent/com-zyj-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com-zyj-util/com-zyj-util.iml" filepath="$PROJECT_DIR$/com-zyj-util/com-zyj-util.iml" />
+    </modules>
+  </component>
+</project>

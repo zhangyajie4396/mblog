@@ -1,0 +1,34 @@
+server:
+  port: 8088
+
+spring:
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/pw_zyj?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+   mapper-locations: classpath*:com/zyj/mapper/*Mapper.xml
+   type-aliases-package: com.zyj.model
+
+ #pagehelper分页插件
+pagehelper:
+   helperDialect: mysql
+   reasonable: true
+   supportMethodsArguments: true
+   params: count=countSql
+
+logging:
+  level:
+    com.zyj.dao: DEBUG
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="com-zyj-browser" />
+        <module name="com-zyj-core" />
+        <module name="com-zyj-mblog" />
+        <module name="com-zyj-util" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com-zyj-browser" target="1.8" />
+      <module name="com-zyj-core" target="1.8" />
+      <module name="com-zyj-mblog" target="1.8" />
+      <module name="com-zyj-parent" target="1.8" />
+      <module name="com-zyj-util" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
