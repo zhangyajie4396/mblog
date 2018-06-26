@@ -1,0 +1,142 @@
+<html lang="zh" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="/css/style.css" rel="stylesheet">-->
+
+    <!-- 引入bootstrap-table样式 -->
+    <link href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet">
+    <script src="/js/jquery.js" ></script>
+</head>
+<body style="height: 80%">
+<div id="toolbar" class="btn-group">
+    <button id="btn_add" type="button" class="btn btn-default" onclick="addUserFun()">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+    </button>
+    <button id="btn_edit" type="button" class="btn btn-default" onclick="batchDelFun()">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+    </button>
+</div>
+<div style="height: 100%">
+    <table id="table" style="width:80%;"></table>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">新增</h4>
+            </div>
+            <form role="form" id="form">
+                <div class="modal-body">
+                    <input type="text" hidden="hidden" name="id" id="id">
+                    <div class="form-group">
+                        <label for="username">用户名</label>
+                        <input type="text" name="username" class="form-control" id="username" placeholder="用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密码</label>
+                        <input type="text" name="password" class="form-control" id="password" placeholder="密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_role">角色</label>
+                        <select id="txt_role" class="form-control selectpicker"  multiple></select>
+                    </div>
+                </div>
+            </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                    <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="/js/msgBox.js"></script>
+<script src="/js/common/user/userManage.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+<script src="/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+<script>
+    $("#table").bootstrapTable({ // 对应table标签的id
+        url: "/user/selectList", // 获取表格数据的url
+        cache: false, // 设置为 false 禁用 AJAX 数据缓存， 默认为true
+        striped: true,  //表格显示条纹，默认为false
+        toolbar:'#toolbar',
+        search:true,
+        showRefresh:true,
+        // pagination: true, // 在表格底部显示分页组件，默认false
+        // pageList: [10, 25, 50, 100], // 设置页面可以显示的数据条数
+        // pageSize: 10, // 页面数据条数
+        // pageNumber: 1, // 首页页码
+        // sidePagination: 'client', // 设置为服务器端分页
+        /* queryParams: function (params) { // 请求服务器数据时发送的参数，可以在这里添加额外的查询参数，返回false则终止请求
+
+             return {
+                 pageSize: params.limit, // 每页要显示的数据条数
+                 offset: params.offset, // 每页显示数据的开始行号
+                 sort: params.sort, // 要排序的字段
+                 sortOrder: params.order, // 排序规则
+                 dataId: $("#dataId").val() // 额外添加的参数
+             }
+         },*/
+        // sortName: 'id', // 要排序的字段
+        // sortOrder: 'desc', // 排序规则
+        columns: [
+            {
+                checkbox : true,
+                align : 'center'
+            },
+            {
+                field: 'id', // 返回json数据中的name
+                title: '用户id', // 表格表头显示文字
+                align: 'center', // 左右居中
+                valign: 'middle' // 上下居中
+            }, {
+                field: 'roleId', // 返回json数据中的name
+                title: '角色id', // 表格表头显示文字
+                align: 'center', // 左右居中
+                valign: 'middle' // 上下居中
+            },
+            {
+                field: 'username', // 返回json数据中的name
+                title: '用户名', // 表格表头显示文字
+                align: 'center', // 左右居中
+                valign: 'middle' // 上下居中
+            }, {
+                field: 'password',
+                title: '密码',
+                align: 'center',
+                valign: 'middle'
+            },{
+                field: 'role',
+                title: '角色',
+                align: 'center',
+                valign: 'middle'
+            },{
+                title: "操作",
+                align: 'center',
+                valign: 'middle',
+                width: 160, // 定义列的宽度，单位为像素px
+                formatter: function (value, row, index) {
+                    return "<button class='btn btn-default' onclick='editUserFun(" + JSON.stringify(row) + ")'>编辑</button>";
+                }
+            }
+        ],
+        onLoadSuccess: function(){  //加载成功时执行
+
+        },
+        onLoadError: function(){  //加载失败时执行
+
+        }
+
+    });
+    $('#table').bootstrapTable('hideColumn', 'id');
+    $('#table').bootstrapTable('hideColumn', 'roleId');
+</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<html lang="zh" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap-treeview.css" />
+
+    <!-- 引入bootstrap-table样式 -->
+    <link href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet">
+    <script src="/js/jquery.js" ></script>
+</head>
+<body style="height: 80%">
+<div id="toolbar" class="btn-group">
+    <button id="btn_add" type="button" class="btn btn-default" onclick="addRoleFun()">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+    </button>
+    <button id="btn_edit" type="button" class="btn btn-default" onclick="batchDelFun()">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+    </button>
+</div>
+<div style="height: 100%">
+    <table id="table" style="width:80%;"></table>
+</div>
+
+<div class="modal fade" id="treeModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" >资源</h4>
+            </div>
+            <div class="modal-body">
+               <input type="text" hidden="hidden" id="rowId"/>
+                <div id="tree"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                <button type="button" id="btn_permission" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">新增</h4>
+            </div>
+            <form role="form" id="form">
+                <div class="modal-body">
+                    <input type="text" hidden="hidden" name="id" id="id">
+                    <div class="form-group">
+                        <label for="roleName">角色编码</label>
+                        <input type="text" name="roleName" class="form-control" id="roleName" placeholder="角色编码">
+                    </div>
+                    <div class="form-group">
+                        <label for="remark">角色名称</label>
+                        <input type="text" name="remark" class="form-control" id="remark" placeholder="角色名称">
+                    </div>
+                </div>
+            </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                    <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="/js/msgBox.js"></script>
+<script src="/js/bootstrap/bootstrap-treeview.js"></script>
+<script src="/js/common/role/roleManage.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+<script src="/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+<script>
+    $("#table").bootstrapTable({ // 对应table标签的id
+        url: "/admin/role/selectAll", // 获取表格数据的url
+        cache: false, // 设置为 false 禁用 AJAX 数据缓存， 默认为true
+        striped: true,  //表格显示条纹，默认为false
+        toolbar:'#toolbar',
+        search:true,
+        showRefresh:true,
+        columns: [
+            {
+                checkbox : true,
+                align : 'center'
+            },
+           {
+                field: 'id', // 返回json数据中的name
+                title: '角色id', // 表格表头显示文字
+                align: 'center', // 左右居中
+                valign: 'middle' // 上下居中
+            },
+            {
+                field: 'roleName', // 返回json数据中的name
+                title: '角色编码', // 表格表头显示文字
+                align: 'center', // 左右居中
+                valign: 'middle' // 上下居中
+            }, {
+                field: 'remark',
+                title: '角色名称',
+                align: 'center',
+                valign: 'middle'
+            },{
+                title: "操作",
+                align: 'center',
+                valign: 'middle',
+                width: 200, // 定义列的宽度，单位为像素px
+                formatter: function (value, row, index) {
+                    var btn =  "<button class='btn btn-default' onclick='editRoleFun(" + JSON.stringify(row) + ")'>编辑</button>";
+                    btn +="<button class='btn btn-default' onclick='permissionConfigFun(" + JSON.stringify(row) + ")'>权限配置</button>";
+                    return btn;
+                }
+            }
+        ],
+        onLoadSuccess: function(){  //加载成功时执行
+
+        },
+        onLoadError: function(){  //加载失败时执行
+
+        }
+
+    });
+    $('#table').bootstrapTable('hideColumn', 'id');
+</script>
+</body>
+</html>
