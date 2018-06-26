@@ -3,6 +3,8 @@ package com.zyj.dao;
 import com.zyj.model.Resource;
 import com.zyj.model.ResourceExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface ResourceMapper {
@@ -30,6 +32,10 @@ public interface ResourceMapper {
 
     //-------------start-------------
 
-    //查询所有资源
+    //查询所有菜单（一级）
+    List<Map<String,Object>> selectMenu();
+
+    //查询所有资源()
     List<Resource> selectList();
+
 }

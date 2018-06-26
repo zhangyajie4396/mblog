@@ -8,6 +8,7 @@
     <result column="url" jdbcType="VARCHAR" property="url" />
     <result column="icon" jdbcType="VARCHAR" property="icon" />
     <result column="seq" jdbcType="INTEGER" property="seq" />
+    <collection property="children" column="id" select="selectByPid" ofType="Resource"/>
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -107,7 +108,7 @@
     values (#{id,jdbcType=INTEGER}, #{pid,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, 
       #{url,jdbcType=VARCHAR}, #{icon,jdbcType=VARCHAR}, #{seq,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.zyj.model.Resource">
+  <insert id="insertSelective" parameterType="com.zyj.model.Resource" useGeneratedKeys="true" keyProperty="id">
     insert into resource
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -226,9 +227,21 @@
   </update>
 
   <!--start-->
+  <select id="selectMenu" resultType="map">
+    select
+    <include refid="Base_Column_List"/>
+    from resource where pid is null
+  </select>
+
   <select id="selectList" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
-    from resource
+    from resource where pid is null
+  </select>
+
+  <select id="selectByPid" resultType="Resource" parameterType="int">
+    select
+    <include refid="Base_Column_List"/>
+    from resource where pid = #{id}
   </select>
 </mapper>

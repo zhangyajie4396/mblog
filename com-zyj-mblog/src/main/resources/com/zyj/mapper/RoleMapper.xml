@@ -5,6 +5,7 @@
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="code" jdbcType="VARCHAR" property="code" />
     <result column="name" jdbcType="VARCHAR" property="name" />
+    <collection property="resources" ofType="com.zyj.model.Resource" column="id" select="findResourceByRoleId"/>
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -104,7 +105,7 @@
     values (#{id,jdbcType=INTEGER}, #{code,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.zyj.model.Role">
+  <insert id="insertSelective" parameterType="com.zyj.model.Role" useGeneratedKeys="true" keyProperty="id">
     insert into role
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -179,4 +180,17 @@
       name = #{name,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <!--start-->
+  <select id="selectList" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List"/>
+    from role
+  </select>
+
+  <select id="findResourceByRoleId" resultType="Resource">
+    select r.*
+    from resource r LEFT JOIN role_resource rr on r.id = rr.resource_id
+    where rr.role_id = #{id}
+  </select>
 </mapper>

@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="app" xmlns:th="http://www.thymeleaf.org">
 <head th:include="resources/common/common_header :: common_header">
-    <!-- <script type="text/javascript">
-         window.UEDITOR_HOME_URL = '/resources/assets/vendors/ueditor/';
-     </script>-->
 </head>
-<body class="nav-md" th:inline="javascript">
+<body class="nav-md"  style="overflow: hidden">
 <div class="container body">
     <div class="main_container">
         <div class="col-md-3 left_col">
@@ -23,11 +20,12 @@
                     <div class="menu_section">
                         <h3>系统菜单</h3>
                         <ul class="nav side-menu">
-                            <li><a href="/"><i class="fa fa-home"></i> Home</a>
+                            <li class="tt">
+                                <a href="javaScript:void(0)" value="/admin/home.html"><i class="fa fa-home"></i> Home</a>
                             </li>
 
-                            <li th:each="menuList:${menuList}">
-                                <a th:href="${menuList.url}" nav="1"><i th:class="${menuList.icon}"></i><span th:text="${menuList.name}"></span> </a>
+                            <li th:each="menuList:${menuList}" class="tt">
+                                <a href="javaScript:void(0)" th:value="${menuList.url}" nav="1"><i th:class="${menuList.icon}"></i><span th:text="${menuList.name}"></span> </a>
                             </li>
                         </ul>
                     </div>
@@ -73,75 +71,20 @@
                 </div>
                 <div class="clearfix">
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="x_panel">
-                            <div class="x_title">
-                                <h2>系统状态</h2>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="x_content" style="height: 231px;">
-                                <table class="table table-bordered">
-                                    <tr>
-                                        <td>内存消耗:</td>
-                                        <td th:text="${usedMemory}+'M/'+${totalMemory}+'M'">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:120px;">操作系统:</td>
-                                        <td th:text="${os}"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:120px;">JDK版本:</td>
-                                        <td th:text="${javaVersion}"></td>
-                                    </tr>
-                                    <input type="hidden" th:value="${memPercent}" id="data">
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" id="viewDiv">
 
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="x_panel">
-                            <div class="x_title">
-                                <h2>内存使用情况</h2>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="x_content">
-                                <canvas id="canvas"></canvas>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div th:include="resources/common/common_foot :: foot"></div>
 
                 <script>
                     $(function () {
-                        var ctx = document.getElementById("canvas");
-                        var data = {
-                            labels: [
-                                "可用",
-                                "已用"
-                            ],
-                            datasets: [{
-                                data: [$('#data').val(), 100-parseInt($('#data').val())],
-                                backgroundColor: [
-                                    "#455C73",
-                                    "#9B59B6"
-                                ],
-                                hoverBackgroundColor: [
-                                    "#34495E",
-                                    "#B370CF"
-                                ]
-                            }]
-                        };
+                        $('#viewDiv').load('/admin/home.html');
+                        $('.tt').on('click','a',function(e,b){
+                            var href = $(this).attr('value');
+                            $('#viewDiv').load(href);
+                        })
 
-                        var canvasDoughnut = new Chart(ctx, {
-                            type: 'doughnut',
-                            tooltipFillColor: "rgba(51, 51, 51, 0.55)",
-                            data: data
-                        });
                     })
                 </script>
             </div>
@@ -158,6 +101,9 @@
         <!-- /footer content -->
     </div>
     <!-- Custom Theme Scripts -->
+    <script src="/resources/highcharts/highcharts.js"></script>
+    <script src="/resources/highcharts/exporting.js"></script>
+    <script src="/resources/highcharts/highcharts-zh_CN.js"></script>
     <script src="/resources/assets/admin/js/custom.min.js"></script>
     <script src="/resources/assets/admin/js/app.data.js"></script>
 </body>

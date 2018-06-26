@@ -27,4 +27,8 @@ public interface RoleResourceMapper {
     int updateByPrimaryKeySelective(RoleResource record);
 
     int updateByPrimaryKey(RoleResource record);
+
+    //----------start--------------
+    void batchInsert(List<RoleResource> list);
+
 }

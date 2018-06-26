@@ -3,6 +3,7 @@ package com.zyj.service;
 import com.zyj.model.Resource;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: ZhangYajie
@@ -11,6 +12,9 @@ import java.util.List;
  */
 public interface IResourceService {
 
-    //查询所有资源
+    //查询菜单
+    List<Map<String,Object>> findMenu();
+
+    //查询资源树
     List<Resource> selectList();
 }

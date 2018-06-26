@@ -27,4 +27,9 @@ public interface RoleMapper {
     int updateByPrimaryKeySelective(Role record);
 
     int updateByPrimaryKey(Role record);
+
+    //---------------------start----------------------------------
+
+    //查询所有角色
+    List<Role> selectList();
 }

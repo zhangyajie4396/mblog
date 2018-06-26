@@ -179,4 +179,19 @@
       resource_id = #{resourceId,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <!--start-->
+
+  <insert id="batchInsert" parameterType="list">
+    insert into role_resource (id, role_id, resource_id
+    )
+    values
+    <foreach collection="list" separator="," item="item">
+      (
+      #{item.id,jdbcType=INTEGER},
+      #{item.roleId,jdbcType=INTEGER},
+      #{item.resourceId,jdbcType=INTEGER}
+      )
+    </foreach>
+  </insert>
 </mapper>

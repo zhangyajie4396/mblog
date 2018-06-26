@@ -1,7 +1,10 @@
 package com.zyj.model;
 
-import java.util.Date;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.util.Date;
+import java.util.List;
+@JsonIgnoreProperties(value={"password"}) //希望动态过滤掉的属性
 public class User {
     private Integer id;
 
@@ -16,6 +19,16 @@ public class User {
     private String profile;
 
     private Integer disabled;
+
+    private List<Role> roles;
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
 
     public Integer getId() {
         return id;

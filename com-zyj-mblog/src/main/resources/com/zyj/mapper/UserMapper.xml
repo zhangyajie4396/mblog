@@ -9,6 +9,7 @@
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="profile" jdbcType="VARCHAR" property="profile" />
     <result column="disabled" jdbcType="INTEGER" property="disabled" />
+    <collection property="roles" select="selectRolesByUserId" column="id" ofType="Role"/>
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -110,7 +111,7 @@
       #{nickname,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{profile,jdbcType=VARCHAR}, 
       #{disabled,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.zyj.model.User">
+  <insert id="insertSelective" parameterType="com.zyj.model.User" useGeneratedKeys="true" keyProperty="id">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -247,5 +248,12 @@
     select
     <include refid="Base_Column_List"/>
     from user
+  </select>
+
+  <select id="selectRolesByUserId" resultType="Role" parameterType="int">
+    select r.*
+    from role r
+    left join user_role ur on ur.role_id = r.id
+    where ur.user_id = #{id}
   </select>
 </mapper>
