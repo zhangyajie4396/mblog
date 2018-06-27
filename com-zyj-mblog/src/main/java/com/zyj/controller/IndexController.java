@@ -1,6 +1,7 @@
 package com.zyj.controller;
 
 import com.zyj.beans.ResultBean;
+import com.zyj.model.Resource;
 import com.zyj.service.IResourceService;
 import com.zyj.util.ResultBeanUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -65,4 +67,6 @@ public class IndexController {
         float   f1   =  b.setScale(2,  BigDecimal.ROUND_HALF_UP).floatValue();
         return f1;
     }
+
+
 }

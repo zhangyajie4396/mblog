@@ -163,8 +163,8 @@ $(function(){
                 valign: 'middle',
                 width: 200, // 定义列的宽度，单位为像素px
                 formatter: function (value, row, index) {
-                    var btn =  "<button class='btn btn-default' onclick='editRoleFun(" + JSON.stringify(row) + ")'>编辑</button>";
-                    btn +="<button class='btn btn-default' onclick='permissionConfigFun(" + JSON.stringify(row) + ")'>权限配置</button>";
+                    var btn =  "<button class='btn btn-xs btn-info' onclick='editRoleFun(" + JSON.stringify(row) + ")'><i class='fa fa-edit'></i>编辑</button>";
+                    btn +="<button class='btn btn-xs btn-info' onclick='permissionConfigFun(" + JSON.stringify(row) + ")'><i class='fa fa-key'></i>权限配置</button>";
                     return btn;
                 }
             }

@@ -22,9 +22,17 @@ public class ResourceController {
     @Autowired
     private IResourceService resourceService;
 
+    //查询所有菜单组成树
     @RequestMapping("/findAll")
     public ResultBean findTree(){
         List<Resource> resources = resourceService.selectList();
+        return ResultBeanUtil.getResultBean(resources);
+    }
+
+    //查询所有资源
+    @RequestMapping("/selectList")
+    public ResultBean selectList(){
+        List<Resource> resources = resourceService.selectAll();
         return ResultBeanUtil.getResultBean(resources);
     }
 }

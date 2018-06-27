@@ -8,7 +8,6 @@
     <result column="url" jdbcType="VARCHAR" property="url" />
     <result column="icon" jdbcType="VARCHAR" property="icon" />
     <result column="seq" jdbcType="INTEGER" property="seq" />
-    <collection property="children" column="id" select="selectByPid" ofType="Resource"/>
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -233,15 +232,10 @@
     from resource where pid is null
   </select>
 
-  <select id="selectList" resultMap="BaseResultMap">
+  <select id="selectList" resultType="Resource">
     select
     <include refid="Base_Column_List"/>
-    from resource where pid is null
+    from resource
   </select>
 
-  <select id="selectByPid" resultType="Resource" parameterType="int">
-    select
-    <include refid="Base_Column_List"/>
-    from resource where pid = #{id}
-  </select>
 </mapper>

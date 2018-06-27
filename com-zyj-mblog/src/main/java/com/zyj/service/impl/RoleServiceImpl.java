@@ -63,7 +63,7 @@ public class RoleServiceImpl implements IRoleService {
 
         //先根据角色id删除再重新添加
         RoleResourceExample example = new RoleResourceExample();
-        example.createCriteria().andRoleIdEqualTo(list.get(0).getId());
+        example.createCriteria().andRoleIdEqualTo(list.get(0).getRoleId());
         roleResourceMapper.deleteByExample(example);
 
         if(list.get(0).getResourceId()!= null){

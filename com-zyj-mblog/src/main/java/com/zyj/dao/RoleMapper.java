@@ -4,6 +4,7 @@ import com.zyj.model.Role;
 import com.zyj.model.RoleExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 public interface RoleMapper {
     int countByExample(RoleExample example);

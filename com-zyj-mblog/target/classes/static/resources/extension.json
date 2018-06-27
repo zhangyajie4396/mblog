@@ -1,0 +1,70 @@
+{
+  "data": [{
+    "id": 2,
+    "parentId": null,
+    "url": "/admin/user/list.html",
+    "icon": "fa fa-user icon-xlarge",
+    "seq": 1,
+    "text": "用户管理",
+    "children": null
+  }, {
+    "id": 3,
+    "parentId": null,
+    "url": "/admin/role/list.html",
+    "icon": "fa fa fa-registered icon-xlarge",
+    "seq": 2,
+    "text": "角色管理",
+    "children": null
+  }, {
+    "id": 4,
+    "parentId": null,
+    "url": "/admin/menu/list.html",
+    "icon": "fa fa-reorder icon-xlarge",
+    "seq": 3,
+    "text": "菜单管理",
+    "children": null
+  }, {
+    "id": 5,
+    "parentId": 2,
+    "url": null,
+    "icon": null,
+    "seq": 1,
+    "text": "新增用户",
+    "children": null
+  }, {
+    "id": 6,
+    "parentId": 2,
+    "url": null,
+    "icon": null,
+    "seq": 2,
+    "text": "修改用户",
+    "children": null
+  }, {
+    "id": 7,
+    "parentId": 3,
+    "url": null,
+    "icon": null,
+    "seq": 1,
+    "text": "新增角色",
+    "children": null
+  }, {
+    "id": 8,
+    "parentId": 3,
+    "url": null,
+    "icon": null,
+    "seq": 2,
+    "text": "修改角色",
+    "children": null
+  }, {
+    "id": 9,
+    "parentId": 3,
+    "url": null,
+    "icon": null,
+    "seq": 3,
+    "text": "删除角色",
+    "children": null
+  }],
+  "code": 200,
+  "msg": "操作成功",
+  "success": true
+}
