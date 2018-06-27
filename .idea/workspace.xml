@@ -2,54 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="672a7d62-e291-4a75-8178-9b8bdd194933" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_4_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_4_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_4_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/sql/note.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/extension.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/js/bootstrap/bootstrap-treegrid.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/js/bootstrap/jquery.treetable.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/test/java/com/zyj/test/TreeTeset.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/com-zyj-mblog.iml" afterPath="$PROJECT_DIR$/com-zyj-mblog/com-zyj-mblog.iml" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/pom.xml" afterPath="$PROJECT_DIR$/com-zyj-mblog/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/IndexController.java" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/IndexController.java" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/ResourceController.java" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/ResourceController.java" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/RoleMapper.java" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/RoleMapper.java" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/model/Resource.java" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/model/Resource.java" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/IResourceService.java" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/IResourceService.java" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/ResourceServiceImpl.java" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/ResourceServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/RoleServiceImpl.java" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/RoleServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/ResourceMapper.xml" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/ResourceMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common_foot.html" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common_foot.html" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common_header.html" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common_header.html" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/role/roleManage.js" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/role/roleManage.js" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/user/userManage.js" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/user/userManage.js" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/controller/IndexController.class" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/controller/IndexController.class" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/controller/ResourceController.class" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/controller/ResourceController.class" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/mapper/ResourceMapper.xml" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/mapper/ResourceMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/model/Resource.class" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/model/Resource.class" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/service/IResourceService.class" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/service/IResourceService.class" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/service/impl/ResourceServiceImpl.class" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/service/impl/ResourceServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/service/impl/RoleServiceImpl.class" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/com/zyj/service/impl/RoleServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/static/resources/common/common_foot.html" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/static/resources/common/common_foot.html" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/static/resources/common/common_header.html" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/static/resources/common/common_header.html" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/static/resources/common/role/roleManage.js" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/static/resources/common/role/roleManage.js" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/target/classes/static/resources/common/user/userManage.js" afterPath="$PROJECT_DIR$/com-zyj-mblog/target/classes/static/resources/common/user/userManage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/menu/menuManage.js" />
+      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html" />
     </list>
     <ignored path="$PROJECT_DIR$/com-zyj-parent/target/" />
     <ignored path="$PROJECT_DIR$/com-zyj-util/target/" />
@@ -82,11 +36,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="33" />
+            <state relative-caret-position="330">
+              <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menuManage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/menu/menuManage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -112,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="roleManage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="roleManage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/role/roleManage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -189,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/com-zyj-util/src/main/java/com/zyj/util/ResultBeanUtil.java" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/util/ResultBeanUtil.java" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/test.html" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/highcharts/highcharts.js" />
@@ -235,11 +198,12 @@
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common_foot.html" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/ResourceMapper.xml" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/sql/note.txt" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common_header.html" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/user/userManage.js" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/user/list.html" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/role/roleManage.js" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/menu/menu.js" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html" />
       </list>
     </option>
   </component>
@@ -556,6 +520,17 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
@@ -911,7 +886,7 @@
       <workItem from="1529892791565" duration="8860000" />
       <workItem from="1529908570050" duration="16919000" />
       <workItem from="1529981772729" duration="25541000" />
-      <workItem from="1530062964361" duration="24983000" />
+      <workItem from="1530062964361" duration="25551000" />
     </task>
     <servers />
   </component>
@@ -948,10 +923,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76303000" />
+    <option name="totallyTimeSpent" value="76871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="1" width="1378" height="733" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -964,7 +940,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5466667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5466667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1043,13 +1019,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/css/bootstrap-table.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/css/bootstrap-select.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1441,14 +1410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/role/list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
@@ -1477,6 +1438,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="166" column="61" lean-forward="false" selection-start-line="166" selection-start-column="61" selection-end-line="166" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/menu/menuManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
           <folding />
         </state>
       </provider>
