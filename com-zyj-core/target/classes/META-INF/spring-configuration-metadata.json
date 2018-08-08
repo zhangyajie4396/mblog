@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.zyj.security.propertis.SecurityProperties",
+      "name": "zyj.security",
+      "type": "com.zyj.security.propertis.SecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.zyj.security.propertis.SecurityProperties",
+      "name": "zyj.security.browser",
+      "type": "com.zyj.security.propertis.BrowserProperties"
+    }
+  ]
+}

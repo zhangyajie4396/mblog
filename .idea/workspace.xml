@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="672a7d62-e291-4a75-8178-9b8bdd194933" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/menu/menuManage.js" />
-      <change beforePath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html" afterPath="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html" />
-    </list>
+    <list default="true" id="672a7d62-e291-4a75-8178-9b8bdd194933" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/com-zyj-parent/target/" />
     <ignored path="$PROJECT_DIR$/com-zyj-util/target/" />
     <ignored path="$PROJECT_DIR$/com-zyj-mblog/target/" />
@@ -35,52 +32,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menuManage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/menu/menuManage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="note.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/sql/note.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userManage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/user/userManage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="165" column="66" lean-forward="true" selection-start-line="165" selection-start-column="51" selection-end-line="165" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roleManage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/role/roleManage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="166" column="61" lean-forward="false" selection-start-line="166" selection-start-column="61" selection-end-line="166" selection-end-column="61" />
+            <state relative-caret-position="242">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -92,22 +49,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>enableSelectByExample=&quot;false&quot; selectByExampleQueryId=&quot;false&quot;</find>
-      <find>/assets</find>
-      <find>addAttribute</find>
-      <find>data</find>
-      <find>test.html</find>
-      <find>url</find>
-      <find>inser</find>
-      <find>insert</find>
       <find>TreeNode</find>
       <find>showBox</find>
       <find>'</find>
@@ -118,10 +67,29 @@
       <find>parentId</find>
       <find>pid</find>
       <find>pId</find>
+      <find>updateByPrimaryKey</find>
+      <find>selectMenu</find>
+      <find>selectList</find>
+      <find>BaseResultMap</find>
+      <find>inser</find>
+      <find>reveal()</find>
+      <find>confirm</find>
+      <find>g_cont</find>
+      <find>modal</find>
+      <find>Double</find>
+      <find>onNodeUnchecked</find>
+      <find>/assets</find>
+      <find>images</find>
+      <find>/images</find>
+      <find>登录</find>
+      <find>int</find>
+      <find>api/latests.json</find>
+      <find>/admin/user</find>
+      <find>User</find>
+      <find>nickname</find>
     </findStrings>
     <replaceStrings>
       <replace>enableSelectByExample=&quot;true&quot; selectByExampleQueryId=&quot;true&quot;</replace>
-      <replace>/resources/assets</replace>
       <replace>addObject</replace>
       <replace>home.html</replace>
       <replace>Resource</replace>
@@ -132,6 +100,13 @@
       <replace>children</replace>
       <replace>parentId</replace>
       <replace>pid</replace>
+      <replace>BigDecimal</replace>
+      <replace>/resources/assets</replace>
+      <replace>/resources/img/login</replace>
+      <replace>/img/login</replace>
+      <replace>/admin/group</replace>
+      <replace>Group</replace>
+      <replace>name</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -149,61 +124,62 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/index.html" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/com-zyj-browser/src/main/java/com/zyj/security/WebSecurityConfig.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/util/ResultBeanUtil.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/test.html" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/highcharts/highcharts.js" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/highcharts/exporting.js" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/highcharts/highcharts-zh_CN.js" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/home.html" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/bootstrap/bootstrap-table.min.js" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/bootstrap/bootstrap-select.min.js" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/css/bootstrap-table.min.css" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/css/bootstrap-select.min.css" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/index.html" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/UserRoleMapper.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/UserRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common.js" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/model/User.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/ResourceMapper.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/util/TreeUtil.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/IRoleService.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/RoleResourceMapper.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/RoleResourceMapper.xml" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/RoleMapper.xml" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/model/Role.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/RoleController.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/role/list.html" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/sql/pw_zyj_new.sql" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/RoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/RoleMapper.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/pom.xml" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/model/Resource.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/test/java/com/zyj/test/TreeTeset.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/js/bootstrap/bootstrap-treegrid.js" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/IResourceService.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/ResourceController.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/ResourceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/extension.json" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/js/bootstrap/jquery.treetable.js" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common_foot.html" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/ResourceMapper.xml" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/sql/note.txt" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/js/jquery.min.js" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/js/myAlert.js" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/css/myAlert.css" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common_header.html" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/user/userManage.js" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/user/list.html" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/role/roleManage.js" />
-        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/menu/menu.js" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/ResourceController.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/menu/menuManage.js" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/model/Student.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/admin/UserController.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/admin/common_foot.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/index.html" />
         <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/role/list.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/user/list.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/admin/IndexController.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/admin/AdminController.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/default/common_foot.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/admin/common_header.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/default/default_header.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/default/default_foot.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/css/login.css" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/security/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/com-zyj-core/src/main/java/com/zyj/security/propertis/SecurityProperties.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/admin/ResourceController.java" />
+        <option value="$PROJECT_DIR$/com-zyj-core/src/main/java/com/zyj/SecurityCoreConfig.java" />
+        <option value="$PROJECT_DIR$/com-zyj-browser/src/main/java/com/zyj/authtication/MyAuthenticationFailHander.java" />
+        <option value="$PROJECT_DIR$/com-zyj-browser/src/main/java/com/zyj/authtication/MyAuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/resources/404.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/desk/IndexController.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/default/register.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/sql/note.txt" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/pom.xml" />
+        <option value="$PROJECT_DIR$/com-zyj-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/com-zyj-core/pom.xml" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/default/login.html" />
+        <option value="$PROJECT_DIR$/com-zyj-browser/src/main/java/com/zyj/security/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/com-zyj-core/src/main/java/com/zyj/security/propertis/BrowserProperties.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/default/index.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/default/inc/header.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/generator/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/GroupMapper.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/GroupMapper.xml" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/IGroupService.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/GroupServiceImpl.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/admin/GroupController.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/group/list.html" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/admin/user/userManage.js" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/admin/role/roleManage.js" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/admin/group/groupManage.js" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/test/java/com/zyj/test/TreeTeset.java" />
+        <option value="$PROJECT_DIR$/com-zyj-mblog/src/test/java/com/zyj/test/MainTest.java" />
       </list>
     </option>
   </component>
@@ -243,26 +219,30 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="com-zyj-mblog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="com-zyj-mblog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com-zyj-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="com-zyj-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="com-zyj-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-6" />
-    <option name="y" value="1" />
-    <option name="width" value="1378" />
-    <option name="height" value="733" />
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -282,7 +262,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,33 +275,73 @@
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-zyj-browser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-zyj-browser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-zyj-browser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-zyj-browser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zyj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-zyj-browser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zyj" type="462c0819:PsiDirectoryNode" />
+              <item name="authtication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-zyj-browser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zyj" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-zyj-core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
+              <item name="com-zyj-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
+              <item name="com-zyj-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
+              <item name="com-zyj-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
+              <item name="com-zyj-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -326,67 +349,27 @@
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
+              <item name="com-zyj-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zyj" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="propertis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zyj" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zyj" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zyj" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zyj" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zyj" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zyj" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
@@ -394,14 +377,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
@@ -436,26 +411,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="role" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -475,50 +430,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-              <item name="treeTable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -530,7 +441,7 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
@@ -541,72 +452,13 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="role" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-zyj-mblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
@@ -634,13 +486,18 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-zyj-util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -651,8 +508,8 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mblog" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -662,20 +519,22 @@
     <property name="RequestMappingsPanelOrder2" value="2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\sql" />
+      <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\static\resources\common\admin\group" />
+      <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\static\admin\group" />
+      <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\static\resources" />
+      <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zyj" />
+      <recent name="com.zyj.security.propertis" />
+      <recent name="com.zyj.security" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\static\resources\js\bootstrap" />
       <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\static\admin" />
       <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\generator" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.zyj" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\sql" />
-      <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\static\resources\js\bootstrap" />
-      <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\static\resources" />
-      <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\static\admin\role" />
-      <recent name="D:\my\code\mblog\com-zyj-mblog\src\main\resources\static\resources\common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -696,6 +555,25 @@
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zyj.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.zyj.test.MainTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="com-zyj-mblog" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -725,6 +603,31 @@
       <option name="MAIN_CLASS_NAME" value="com.zyj.test.TreeTeset" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TreeTeset.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zyj.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="com-zyj-mblog" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.zyj.test" />
+      <option name="MAIN_CLASS_NAME" value="com.zyj.test.TreeTeset" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -856,17 +759,21 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.generator" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.Applicaiton" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TreeTeset.testTree" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.TreeTeset" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TreeTeset.test" />
+      <item index="5" class="java.lang.String" itemvalue="Application.MainTest" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Spring Boot.Applicaiton" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TreeTeset.testTree" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TreeTeset" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MainTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TreeTeset.test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TreeTeset.testTree" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TreeTeset" />
       </list>
     </recent_temporary>
   </component>
@@ -886,17 +793,21 @@
       <workItem from="1529892791565" duration="8860000" />
       <workItem from="1529908570050" duration="16919000" />
       <workItem from="1529981772729" duration="25541000" />
-      <workItem from="1530062964361" duration="25551000" />
+      <workItem from="1530062964361" duration="25850000" />
+      <workItem from="1530148926464" duration="27482000" />
+      <workItem from="1530235702952" duration="13815000" />
+      <workItem from="1530256536911" duration="10530000" />
+      <workItem from="1530495197147" duration="23925000" />
+      <workItem from="1530580997282" duration="11421000" />
+      <workItem from="1531276349807" duration="1373000" />
+      <workItem from="1531810164482" duration="1174000" />
+      <workItem from="1531968261442" duration="741000" />
+      <workItem from="1532932302834" duration="490000" />
+      <workItem from="1533708381658" duration="2456000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TreeTeset - 2018.06.27 at 10h 49m 00s.xml">
-      <configuration name="TreeTeset" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TreeTeset - 2018.06.27 at 10h 50m 28s.xml">
-      <configuration name="TreeTeset" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TreeTeset - 2018.06.27 at 10h 51m 14s.xml">
       <configuration name="TreeTeset" configurationId="JUnit" />
     </history-entry>
@@ -908,6 +819,12 @@
     </history-entry>
     <history-entry file="TreeTeset - 2018.06.27 at 10h 54m 09s.xml">
       <configuration name="TreeTeset" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TreeTeset_test - 2018.07.03 at 11h 18m 55s.xml">
+      <configuration name="TreeTeset.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TreeTeset_test - 2018.07.03 at 11h 19m 18s.xml">
+      <configuration name="TreeTeset.test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TreeTeset_testTree - 2018.06.27 at 10h 40m 42s.xml">
       <configuration name="TreeTeset.testTree" configurationId="JUnit" />
@@ -923,36 +840,35 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76871000" />
+    <option name="totallyTimeSpent" value="170577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="1" width="1378" height="733" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753405" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981017" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5466667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54664487" sideWeight="0.4969651" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5733333" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27389985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57283145" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5466667" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2806354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -962,8 +878,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -971,34 +888,34 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753405" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981017" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5466667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54664487" sideWeight="0.4969651" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5733333" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57283145" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27389985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5466667" sideWeight="0.5030349" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1014,446 +931,408 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="24" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/css/bootstrap-select.min.css">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="5843" lean-forward="false" selection-start-line="5" selection-start-column="5843" selection-end-line="5" selection-end-column="5843" />
+        <state relative-caret-position="127">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/css/style.css">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.9.RELEASE/spring-jdbc-4.3.9.RELEASE.jar!/org/springframework/jdbc/core/support/JdbcDaoSupport.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="110" lean-forward="true" selection-start-line="11" selection-start-column="110" selection-end-line="11" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.9.RELEASE/spring-core-4.3.9.RELEASE.jar!/org/springframework/util/CollectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="113" column="66" lean-forward="false" selection-start-line="113" selection-start-column="66" selection-end-line="113" selection-end-column="106" />
-          <folding>
-            <marker date="1529995659897" expanded="true" signature="3774:3874" ph="select from user" />
-            <marker date="1529995659897" expanded="true" signature="3960:4014" ph="delete from user... " />
-            <marker date="1529995659897" expanded="true" signature="4105:4121" ph="delete from user... " />
-            <marker date="1529995659897" expanded="true" signature="4288:4618" ph="insert into user... " />
-            <marker date="1529995659897" expanded="true" signature="6050:6075" ph="select count... user" />
-            <marker date="1529995659897" expanded="true" signature="7206:7589" ph="update user... " />
-            <marker date="1529995659897" expanded="true" signature="7787:8439" ph="update user... " />
-            <marker date="1529995659897" expanded="true" signature="8526:8863" ph="update user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="4396" column="29" lean-forward="false" selection-start-line="4396" selection-start-column="29" selection-end-line="4396" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/UserRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/UserRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="184" column="25" lean-forward="false" selection-start-line="184" selection-start-column="16" selection-end-line="184" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.9.RELEASE/spring-tx-4.3.9.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="68" column="29" lean-forward="false" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-          <folding>
-            <element signature="e#871#872#0" expanded="false" />
-            <element signature="e#948#949#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding>
-            <element signature="e#3297#3298#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/util/TreeUtil.java" />
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/IRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/RoleResourceMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="31" column="46" lean-forward="false" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/RoleResourceMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="185" column="29" lean-forward="false" selection-start-line="185" selection-start-column="16" selection-end-line="185" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/RoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="193" column="28" lean-forward="true" selection-start-line="191" selection-start-column="3" selection-end-line="193" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="e#257#258#0" expanded="false" />
-            <element signature="e#315#316#0" expanded="false" />
-            <element signature="e#357#358#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/sql/pw_zyj_new.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="113" column="10" lean-forward="false" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Runtime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="56" column="26" lean-forward="false" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
-          <folding>
-            <element signature="e#1272#1273#0" expanded="false" />
-            <element signature="e#1309#1310#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.9.RELEASE/spring-core-4.3.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/RoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="1095">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/com-zyj-mblog/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        <state relative-caret-position="396">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="109" selection-start-column="12" selection-end-line="124" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/ResourceMapper.java">
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/Applicaiton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="110">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-core/src/main/java/com/zyj/SecurityCoreConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+    <entry file="file://$PROJECT_DIR$/com-zyj-core/src/main/java/com/zyj/security/propertis/SecurityProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="154">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/model/Resource.java">
+    <entry file="file://$PROJECT_DIR$/com-zyj-core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        <state relative-caret-position="368">
+          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/default/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="77" lean-forward="false" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.3.RELEASE/spring-security-config-4.2.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/RememberMeConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/assets/vendors/layer/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="1" column="705" lean-forward="false" selection-start-line="1" selection-start-column="705" selection-end-line="1" selection-end-column="705" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/assets/js/sea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="6144" lean-forward="false" selection-start-line="1" selection-start-column="6144" selection-end-line="1" selection-end-column="6144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/desk/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/admin/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/sql/note.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/assets/js/modules/webuploader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="77" column="83" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/default/inc/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/generator/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/GroupMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/IGroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/util/ResultBeanUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/admin/ResourceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/admin/GroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/admin/menu/menuManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="197" column="11" lean-forward="true" selection-start-line="164" selection-start-column="4" selection-end-line="197" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/admin/role/roleManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/group/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="35" column="42" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/admin/group/groupManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/test/java/com/zyj/test/TreeTeset.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="60" column="5" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="390">
+          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/test/java/com/zyj/test/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/default/default_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/default/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.3.RELEASE/spring-security-config-4.2.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-core/src/main/java/com/zyj/security/propertis/BrowserProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#677#678#0" expanded="false" />
+            <element signature="e#709#710#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/dao/RoleMapper.java">
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/GroupMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/assets/vendors/treeTable/demo/treeTable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="128" column="18" lean-forward="true" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/js/bootstrap/bootstrap-treegrid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="627" column="11" lean-forward="false" selection-start-line="627" selection-start-column="11" selection-end-line="627" selection-end-column="11" />
+        <state relative-caret-position="2178">
+          <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
           <folding>
-            <marker date="1530079238426" expanded="true" signature="11763:11781" ph="..." />
-            <marker date="1530079238426" expanded="true" signature="12084:12117" ph="..." />
-            <marker date="1530079238426" expanded="true" signature="12313:12346" ph="..." />
+            <marker date="1530584150716" expanded="true" signature="3407:3510" ph="select from z_group" />
+            <marker date="1530584150716" expanded="true" signature="3596:3653" ph="delete from z_group... " />
+            <marker date="1530584150716" expanded="true" signature="3745:3764" ph="delete from z_group... " />
+            <marker date="1530584150716" expanded="true" signature="3932:4106" ph="insert into z_group... " />
+            <marker date="1530584150716" expanded="true" signature="5005:5033" ph="select count... z_group" />
+            <marker date="1530584150716" expanded="true" signature="5801:6000" ph="update z_group... " />
+            <marker date="1530584150716" expanded="true" signature="6199:6530" ph="update z_group... " />
+            <marker date="1530584150716" expanded="true" signature="6618:6792" ph="update z_group... " />
+            <marker date="1530584150716" expanded="true" signature="6878:6885" ph="SELECT SELEC... " />
+            <marker date="1530584150716" expanded="true" signature="6878:6937" ph="SELECT from z_group" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/IResourceService.java">
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/RoleResourceMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="4092">
+          <caret line="186" column="5" lean-forward="false" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
+          <folding>
+            <marker date="1530007139198" expanded="true" signature="3386:3495" ph="select from role_resource" />
+            <marker date="1530007139198" expanded="true" signature="3581:3644" ph="delete from role_resource... " />
+            <marker date="1530007139198" expanded="true" signature="3743:3768" ph="delete from role_resource... " />
+            <marker date="1530007139198" expanded="true" signature="3943:4105" ph="insert into role_resource... " />
+            <marker date="1530007139198" expanded="true" signature="4916:4950" ph="select count... role_resource" />
+            <marker date="1530007139198" expanded="true" signature="5646:5819" ph="update role_resource... " />
+            <marker date="1530007139198" expanded="true" signature="6025:6298" ph="update role_resource... " />
+            <marker date="1530007139198" expanded="true" signature="6393:6548" ph="update role_resource... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/RoleController.java">
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/GroupServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="258">
+          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/ResourceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-113">
-          <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-          <folding>
-            <element signature="e#1220#1221#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-            <element signature="e#1343#1344#0" expanded="false" />
-            <element signature="e#1393#1394#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/assets/vendors/treeTable/jquery.treeTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2156">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common_foot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/com/zyj/mapper/ResourceMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="231" column="35" lean-forward="false" selection-start-line="231" selection-start-column="35" selection-end-line="231" selection-end-column="35" />
-          <folding>
-            <marker date="1530087950344" expanded="true" signature="3542:3646" ph="select from resource" />
-            <marker date="1530087950344" expanded="true" signature="3732:3790" ph="delete from resource... " />
-            <marker date="1530087950344" expanded="true" signature="3885:3905" ph="delete from resource... " />
-            <marker date="1530087950344" expanded="true" signature="4076:4305" ph="insert into resource... " />
-            <marker date="1530087950344" expanded="true" signature="5500:5529" ph="select count... resource" />
-            <marker date="1530087950344" expanded="true" signature="6479:6761" ph="update resource... " />
-            <marker date="1530087950344" expanded="true" signature="6963:7448" ph="update resource... " />
-            <marker date="1530087950344" expanded="true" signature="7539:7782" ph="update resource... " />
-            <marker date="1530087950344" expanded="true" signature="7859:7934" ph="select from resource" />
-            <marker date="1530087950344" expanded="true" signature="8008:8072" ph="select from resource" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/js/bootstrap/jquery.treetable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="145" column="25" lean-forward="false" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/extension.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/ResourceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/sql/note.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/common_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/role/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="50" column="53" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+        <state relative-caret-position="-730">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/user/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="62" lean-forward="false" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+        <state relative-caret-position="126">
+          <caret line="36" column="26" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="36" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/user/userManage.js">
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/default/default_foot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="165" column="66" lean-forward="true" selection-start-line="165" selection-start-column="51" selection-end-line="165" selection-end-column="66" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-browser/src/main/java/com/zyj/security/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="56" column="51" lean-forward="false" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/role/roleManage.js">
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/controller/admin/RoleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="166" column="61" lean-forward="false" selection-start-line="166" selection-start-column="61" selection-end-line="166" selection-end-column="61" />
+        <state relative-caret-position="-730">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/menu/menuManage.js">
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/RoleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="-578">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/admin/menu/list.html">
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/java/com/zyj/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+        <state relative-caret-position="-1722">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/admin/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-635">
+          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/common/admin/user/userManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="264" column="26" lean-forward="false" selection-start-line="264" selection-start-column="26" selection-end-line="264" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/static/resources/js/msgBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-232">
+          <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+          <folding>
+            <marker date="1529482381982" expanded="true" signature="6776:6803" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/sql/pw_zyj.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="161" column="20" lean-forward="false" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-zyj-mblog/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -31,4 +31,11 @@ logging:
   level:
     com.zyj.dao: DEBUG
 
+#配置
+zyj:
+  security:
+      browser:
+        loginPage: /login
+        rememberMeSeconds: 604800 #过期时间1星期
+
 

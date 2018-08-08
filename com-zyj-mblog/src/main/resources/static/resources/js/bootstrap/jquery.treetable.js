@@ -1,249 +1,629 @@
-/**
- * 树表组件
- * @author benzhan (詹潮江)
- * @version 1.4.2
- * @lastUpdateDate 2011-09-03
- * @mail zhanchaojiang@qq.com
+/*
+ * jQuery treetable Plugin 3.2.0
+ * http://ludo.cubicphuse.nl/jquery-treetable
+ *
+ * Copyright 2013, Ludo van den Boom
+ * Dual licensed under the MIT or GPL Version 2 licenses.
  */
-(function ($) {
-//	window.SITE_URL = window.SITE_URL || '';
-//	if (document.location.href.indexOf('http://') != 0)	{
-//		var path = '../themes/';
-//	} else {
-//		var path = SITE_URL + '/themes/';
-//	}
+(function($) {
+    var Node, Tree, methods;
 
-    $.fn.treeTable = function (opts) {
-        opts = $.extend({
-            path: '',
-            theme: 'default',
-            expandLevel: 1,
-            column: 0,
-            onSelect: function($treeTable, id){},
-            beforeExpand: function($treeTable, id){}
-        }, opts);
+    Node = (function() {
+        function Node(row, tree, settings) {
+            var parentId;
 
-        var $treeTable = this;
-        $treeTable.addClass('tree_table');
+            this.row = row;
+            this.tree = tree;
+            this.settings = settings;
 
-//        //添加需要的样式
-//        if ($('head').find('#tree_table_' + opts.theme).length == 0) {
-//            $('head').append('<link id="tree_table_' + opts.theme + '" href="' + opts.path + 'themes/' + opts.theme + '/treeTable.css" rel="stylesheet" type="text/css" />');
-//        }
+            // TODO Ensure id/parentId is always a string (not int)
+            this.id = this.row.data(this.settings.nodeIdAttr);
 
-        var css = {
-            'N' : opts.theme + '_node',
-            'AN' : opts.theme + '_active_node',
-            'O' : opts.theme + '_open',
-            'LO' : opts.theme + '_last_open',
-            'S' : opts.theme + '_shut',
-            'LS' : opts.theme + '_last_shut',
-            'HO' : opts.theme + '_hover_open',
-            'HS' : opts.theme + '_hover_shut',
-            'HLO' : opts.theme + '_hover_last_open',
-            'HLS' : opts.theme + '_hover_last_shut',
-            'L' : opts.theme + '_leaf',
-            'LL' : opts.theme + '_last_leaf',
-            'B' : opts.theme + '_blank',
-            'V' : opts.theme + '_vertline'
-        };
-
-        var pMap = {}, cMap = {};
-        var $trs = $treeTable.find('tr');
-        initRelation($trs, true);
-
-        $treeTable.click(function (event) {
-            var $target = $(event.target);
-
-            if ($target.attr('controller')) {
-                $target = $target.parents('tr[haschild]').find('[arrow]');
-                //判断是否是叶子节点
-                if ($target.attr('class').indexOf(css['AN']) == -1 && $target.attr('class').indexOf(css['N']) == -1) { return; }
-                var id = $target.parents('tr[haschild]')[0].id;
-                if (opts.onSelect && opts.onSelect($treeTable, id) === false) { return; }
+            // TODO Move this to a setParentId function?
+            parentId = this.row.data(this.settings.parentIdAttr);
+            if (parentId != null && parentId !== "") {
+                this.parentId = parentId;
             }
 
-            if ($target.attr('arrow')) {
-                var className = $target.attr('class');
-                if (className == css['AN'] + ' ' + css['HLO'] || className == css['AN'] + ' ' + css['HO']) {
-                    var id = $target.parents('tr[haschild]')[0].id;
-                    $target.attr('class', css['AN'] + " " + (className.indexOf(css['HO']) != -1 ?  css['HS'] : css['HLS']));
-
-                    //关闭所有孩子的tr
-                    shut(id);
-                    return;
-                } else if (className == css['AN'] + ' ' + css['HLS'] || className == css['AN'] + ' ' + css['HS']) {
-                    var id = $target.parents('tr')[0].id;
-                    $target.attr('class', css['AN'] + " " + (className.indexOf(css['HS']) != -1 ? css['HO'] : css['HLO']));
-
-                    opts.beforeExpand($treeTable, id);
-                    //展开所有直属节点，根据图标展开子孙节点
-                    open(id);
-                    return;
-                }
-            }
-        });
-
-        $treeTable.mouseover(hoverActiveNode).mouseout(hoverActiveNode);
-
-        function hoverActiveNode(event) {
-            var $target = $(event.target);
-
-            if ($target.attr('controller')) {
-                $target = $target.parents('tr[haschild]').find('[arrow]');
-            }
-
-            if ($target.attr('arrow')) {
-                var className = $target.attr('class');
-                if (className && !className.indexOf(css['AN'])) {
-                    var len = opts.theme.length + 1;
-                    className = className.split(' ')[1].substr(len);
-                    if (className.indexOf('hover_') === 0) {
-                        className = opts.theme + '_' + className.substr(6);
-                    } else {
-                        className = opts.theme + '_hover_' + className;
-                    }
-
-                    $target.attr('class', css['AN'] + ' ' + className);
-                    return;
-                }
-            }
+            this.treeCell = $(this.row.children(this.settings.columnElType)[this.settings.column]);
+            this.expander = $(this.settings.expanderTemplate);
+            this.indenter = $(this.settings.indenterTemplate);
+            this.children = [];
+            this.initialized = false;
+            this.treeCell.prepend(this.indenter);
         }
 
-        /** 初始化节点关系　*/
-        function initRelation($trs, hideLevel) {
-            //构造父子关系
-            $trs.each(function (i) {
-                var pId = $(this).attr('pId') || 0;
-                pMap[pId] || (pMap[pId] = []);
-                pMap[pId].push(this.id);
-                cMap[this.id] = pId;
+        Node.prototype.addChild = function(child) {
+            return this.children.push(child);
+        };
 
-                //给这个tr增加类为了提高选择器的效率
-                $(this).addClass(pId);
-            }).find('[controller]').css('cursor', 'pointer');
+        Node.prototype.ancestors = function() {
+            var ancestors, node;
+            node = this;
+            ancestors = [];
+            while (node = node.parentNode()) {
+                ancestors.push(node);
+            }
+            return ancestors;
+        };
 
-            //标识父节点是否有孩子、是否最后一个节点
-            $trs.each(function (i) {
-                if (!this.id) { return; }
-                var $tr = $(this);
+        Node.prototype.collapse = function() {
+            if (this.collapsed()) {
+                return this;
+            }
 
-                pMap[this.id] && $tr.attr('hasChild', true);
-                var pArr = pMap[cMap[this.id]];
-                if (pArr[0] == this.id) {
-                    $tr.attr('isFirstOne', true);
-                } else {
-                    var prevId = 0;
-                    for (var i = 0; i < pArr.length; i++) {
-                        if (pArr[i] == this.id) { break; }
-                        prevId = pArr[i];
+            this.row.removeClass("expanded").addClass("collapsed");
+
+            this._hideChildren();
+            this.expander.attr("title", this.settings.stringExpand);
+
+            if (this.initialized && this.settings.onNodeCollapse != null) {
+                this.settings.onNodeCollapse.apply(this);
+            }
+
+            return this;
+        };
+
+        Node.prototype.collapsed = function() {
+            return this.row.hasClass("collapsed");
+        };
+
+        // TODO destroy: remove event handlers, expander, indenter, etc.
+
+        Node.prototype.expand = function() {
+            if (this.expanded()) {
+                return this;
+            }
+
+            this.row.removeClass("collapsed").addClass("expanded");
+
+            if (this.initialized && this.settings.onNodeExpand != null) {
+                this.settings.onNodeExpand.apply(this);
+            }
+
+            if ($(this.row).is(":visible")) {
+                this._showChildren();
+            }
+
+            this.expander.attr("title", this.settings.stringCollapse);
+
+            return this;
+        };
+
+        Node.prototype.expanded = function() {
+            return this.row.hasClass("expanded");
+        };
+
+        Node.prototype.hide = function() {
+            this._hideChildren();
+            this.row.hide();
+            return this;
+        };
+
+        Node.prototype.isBranchNode = function() {
+            if(this.children.length > 0 || this.row.data(this.settings.branchAttr) === true) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        Node.prototype.updateBranchLeafClass = function(){
+            this.row.removeClass('branch');
+            this.row.removeClass('leaf');
+            this.row.addClass(this.isBranchNode() ? 'branch' : 'leaf');
+        };
+
+        Node.prototype.level = function() {
+            return this.ancestors().length;
+        };
+
+        Node.prototype.parentNode = function() {
+            if (this.parentId != null) {
+                return this.tree[this.parentId];
+            } else {
+                return null;
+            }
+        };
+
+        Node.prototype.removeChild = function(child) {
+            var i = $.inArray(child, this.children);
+            return this.children.splice(i, 1)
+        };
+
+        Node.prototype.render = function() {
+            var handler,
+                settings = this.settings,
+                target;
+
+            if (settings.expandable === true && this.isBranchNode()) {
+                handler = function(e) {
+                    $(this).parents("table").treetable("node", $(this).parents("tr").data(settings.nodeIdAttr)).toggle();
+                    return e.preventDefault();
+                };
+
+                this.indenter.html(this.expander);
+                target = settings.clickableNodeNames === true ? this.treeCell : this.expander;
+
+                target.off("click.treetable").on("click.treetable", handler);
+                target.off("keydown.treetable").on("keydown.treetable", function(e) {
+                    if (e.keyCode == 13) {
+                        handler.apply(this, [e]);
                     }
-                    $tr.attr('prevId', prevId);
+                });
+            }
+
+            this.indenter[0].style.paddingLeft = "" + (this.level() * settings.indent) + "px";
+
+            return this;
+        };
+
+        Node.prototype.reveal = function() {
+            if (this.parentId != null) {
+                this.parentNode().reveal();
+            }
+            return this.expand();
+        };
+
+        Node.prototype.setParent = function(node) {
+            if (this.parentId != null) {
+                this.tree[this.parentId].removeChild(this);
+            }
+            this.parentId = node.id;
+            this.row.data(this.settings.parentIdAttr, node.id);
+            return node.addChild(this);
+        };
+
+        Node.prototype.show = function() {
+            if (!this.initialized) {
+                this._initialize();
+            }
+            this.row.show();
+            if (this.expanded()) {
+                this._showChildren();
+            }
+            return this;
+        };
+
+        Node.prototype.toggle = function() {
+            if (this.expanded()) {
+                this.collapse();
+            } else {
+                this.expand();
+            }
+            return this;
+        };
+
+        Node.prototype._hideChildren = function() {
+            var child, _i, _len, _ref, _results;
+            _ref = this.children;
+            _results = [];
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                child = _ref[_i];
+                _results.push(child.hide());
+            }
+            return _results;
+        };
+
+        Node.prototype._initialize = function() {
+            var settings = this.settings;
+
+            this.render();
+
+            if (settings.expandable === true && settings.initialState === "collapsed") {
+                this.collapse();
+            } else {
+                this.expand();
+            }
+
+            if (settings.onNodeInitialized != null) {
+                settings.onNodeInitialized.apply(this);
+            }
+
+            return this.initialized = true;
+        };
+
+        Node.prototype._showChildren = function() {
+            var child, _i, _len, _ref, _results;
+            _ref = this.children;
+            _results = [];
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                child = _ref[_i];
+                _results.push(child.show());
+            }
+            return _results;
+        };
+
+        return Node;
+    })();
+
+    Tree = (function() {
+        function Tree(table, settings) {
+            this.table = table;
+            this.settings = settings;
+            this.tree = {};
+
+            // Cache the nodes and roots in simple arrays for quick access/iteration
+            this.nodes = [];
+            this.roots = [];
+        }
+
+        Tree.prototype.collapseAll = function() {
+            var node, _i, _len, _ref, _results;
+            _ref = this.nodes;
+            _results = [];
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                node = _ref[_i];
+                _results.push(node.collapse());
+            }
+            return _results;
+        };
+
+        Tree.prototype.expandAll = function() {
+            var node, _i, _len, _ref, _results;
+            _ref = this.nodes;
+            _results = [];
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                node = _ref[_i];
+                _results.push(node.expand());
+            }
+            return _results;
+        };
+
+        Tree.prototype.findLastNode = function (node) {
+            if (node.children.length > 0) {
+                return this.findLastNode(node.children[node.children.length - 1]);
+            } else {
+                return node;
+            }
+        };
+
+        Tree.prototype.loadRows = function(rows) {
+            var node, row, i;
+
+            if (rows != null) {
+                for (i = 0; i < rows.length; i++) {
+                    row = $(rows[i]);
+
+                    if (row.data(this.settings.nodeIdAttr) != null) {
+                        node = new Node(row, this.tree, this.settings);
+                        this.nodes.push(node);
+                        this.tree[node.id] = node;
+
+                        if (node.parentId != null && this.tree[node.parentId]) {
+                            this.tree[node.parentId].addChild(node);
+                        } else {
+                            this.roots.push(node);
+                        }
+                    }
+                }
+            }
+
+            for (i = 0; i < this.nodes.length; i++) {
+                node = this.nodes[i].updateBranchLeafClass();
+            }
+
+            return this;
+        };
+
+        Tree.prototype.move = function(node, destination) {
+            // Conditions:
+            // 1: +node+ should not be inserted as a child of +node+ itself.
+            // 2: +destination+ should not be the same as +node+'s current parent (this
+            //    prevents +node+ from being moved to the same location where it already
+            //    is).
+            // 3: +node+ should not be inserted in a location in a branch if this would
+            //    result in +node+ being an ancestor of itself.
+            var nodeParent = node.parentNode();
+            if (node !== destination && destination.id !== node.parentId && $.inArray(node, destination.ancestors()) === -1) {
+                node.setParent(destination);
+                this._moveRows(node, destination);
+
+                // Re-render parentNode if this is its first child node, and therefore
+                // doesn't have the expander yet.
+                if (node.parentNode().children.length === 1) {
+                    node.parentNode().render();
+                }
+            }
+
+            if(nodeParent){
+                nodeParent.updateBranchLeafClass();
+            }
+            if(node.parentNode()){
+                node.parentNode().updateBranchLeafClass();
+            }
+            node.updateBranchLeafClass();
+            return this;
+        };
+
+        Tree.prototype.removeNode = function(node) {
+            // Recursively remove all descendants of +node+
+            this.unloadBranch(node);
+
+            // Remove node from DOM (<tr>)
+            node.row.remove();
+
+            // Remove node from parent children list
+            if (node.parentId != null) {
+                node.parentNode().removeChild(node);
+            }
+
+            // Clean up Tree object (so Node objects are GC-ed)
+            delete this.tree[node.id];
+            this.nodes.splice($.inArray(node, this.nodes), 1);
+
+            return this;
+        }
+
+        Tree.prototype.render = function() {
+            var root, _i, _len, _ref;
+            _ref = this.roots;
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                root = _ref[_i];
+
+                // Naming is confusing (show/render). I do not call render on node from
+                // here.
+                root.show();
+            }
+            return this;
+        };
+
+        Tree.prototype.sortBranch = function(node, sortFun) {
+            // First sort internal array of children
+            node.children.sort(sortFun);
+
+            // Next render rows in correct order on page
+            this._sortChildRows(node);
+
+            return this;
+        };
+
+        Tree.prototype.unloadBranch = function(node) {
+            // Use a copy of the children array to not have other functions interfere
+            // with this function if they manipulate the children array
+            // (eg removeNode).
+            var children = node.children.slice(0),
+                i;
+
+            for (i = 0; i < children.length; i++) {
+                this.removeNode(children[i]);
+            }
+
+            // Reset node's collection of children
+            node.children = [];
+
+            node.updateBranchLeafClass();
+
+            return this;
+        };
+
+        Tree.prototype._moveRows = function(node, destination) {
+            var children = node.children, i;
+
+            node.row.insertAfter(destination.row);
+            node.render();
+
+            // Loop backwards through children to have them end up on UI in correct
+            // order (see #112)
+            for (i = children.length - 1; i >= 0; i--) {
+                this._moveRows(children[i], node);
+            }
+        };
+
+        // Special _moveRows case, move children to itself to force sorting
+        Tree.prototype._sortChildRows = function(parentNode) {
+            return this._moveRows(parentNode, parentNode);
+        };
+
+        return Tree;
+    })();
+
+    // jQuery Plugin
+    methods = {
+        init: function(options, force) {
+            var settings;
+
+            settings = $.extend({
+                branchAttr: "ttBranch",
+                clickableNodeNames: false,
+                column: 0,
+                columnElType: "td", // i.e. 'td', 'th' or 'td,th'
+                expandable: false,
+                expanderTemplate: "<a href='#'>&nbsp;</a>",
+                indent: 19,
+                indenterTemplate: "<span class='indenter'></span>",
+                initialState: "collapsed",
+                nodeIdAttr: "ttId", // maps to data-tt-id
+                parentIdAttr: "ttParentId", // maps to data-tt-parent-id
+                stringExpand: "Expand",
+                stringCollapse: "Collapse",
+
+                // Events
+                onInitialized: null,
+                onNodeCollapse: null,
+                onNodeExpand: null,
+                onNodeInitialized: null
+            }, options);
+
+            return this.each(function() {
+                var el = $(this), tree;
+
+                if (force || el.data("treetable") === undefined) {
+                    tree = new Tree(this, settings);
+                    tree.loadRows(this.rows).render();
+
+                    el.addClass("treetable").data("treetable", tree);
+
+                    if (settings.onInitialized != null) {
+                        settings.onInitialized.apply(tree);
+                    }
                 }
 
-                pArr[pArr.length - 1] == this.id && $tr.attr('isLastOne', true);
+                return el;
+            });
+        },
 
-                var depth = getDepth(this.id);
-                $tr.attr('depth', depth);
+        destroy: function() {
+            return this.each(function() {
+                return $(this).removeData("treetable").removeClass("treetable");
+            });
+        },
 
-                //格式化节点
-                formatNode(this);
+        collapseAll: function() {
+            this.data("treetable").collapseAll();
+            return this;
+        },
 
-                //判断是否要隐藏限制的层次
-                if (hideLevel) {
-                    depth > opts.expandLevel && $tr.hide();
-                    //判断是否小于深度，如果小于深度则要换成展开的图标
-                    if ($tr.attr('hasChild') && $tr.attr('depth') < opts.expandLevel) {
-                        var className = $tr.attr('isLastOne') ? css['LO'] : css['O'];
-                        $tr.find('.' + css['AN']).attr('class', css['AN'] + ' ' + className);
-                    }
+        collapseNode: function(id) {
+            var node = this.data("treetable").tree[id];
+
+            if (node) {
+                node.collapse();
+            } else {
+                throw new Error("Unknown node '" + id + "'");
+            }
+
+            return this;
+        },
+
+        expandAll: function() {
+            this.data("treetable").expandAll();
+            return this;
+        },
+
+        expandNode: function(id) {
+            var node = this.data("treetable").tree[id];
+
+            if (node) {
+                if (!node.initialized) {
+                    node._initialize();
                 }
+
+                node.expand();
+            } else {
+                throw new Error("Unknown node '" + id + "'");
+            }
+
+            return this;
+        },
+
+        loadBranch: function(node, rows) {
+            var settings = this.data("treetable").settings,
+                tree = this.data("treetable").tree;
+
+            // TODO Switch to $.parseHTML
+            rows = $(rows);
+
+            if (node == null) { // Inserting new root nodes
+                this.append(rows);
+            } else {
+                var lastNode = this.data("treetable").findLastNode(node);
+                rows.insertAfter(lastNode.row);
+            }
+
+            this.data("treetable").loadRows(rows);
+
+            // Make sure nodes are properly initialized
+            rows.filter("tr").each(function() {
+                tree[$(this).data(settings.nodeIdAttr)].show();
             });
 
-            //递归获取深度
-            function getDepth(id) {
-                if (cMap[id] == 0) { return 1; }
-                var $parentDepth = getDepth(cMap[id]);
-                return $parentDepth + 1;
+            if (node != null) {
+                // Re-render parent to ensure expander icon is shown (#79)
+                node.render().expand();
             }
-        }
 
-        //递归关闭所有的孩子
-        function shut(id) {
-            if (!pMap[id]) { return false; }
-            for (var i = 0; i < pMap[id].length; i++) {
-                shut(pMap[id][i]);
-            }
-            $('tr.' + id, $treeTable).hide();
-        }
+            return this;
+        },
 
-        //根据历史记录来展开节点
-        function open(id) {
-            $('tr.' + id, $treeTable).show();
-            if (!pMap[id]) { return false; }
-            for (var i = 0; i < pMap[id].length; i++) {
-                var cId = pMap[id][i];
-                if (pMap[cId]) {
-                    var className = $('#' + cId, $treeTable).find('.' + css['AN']).attr('class');
-                    //如果子节点是展开图表的，则需要展开此节点
-                    (className == css['AN'] + ' ' + css['O'] || className == css['AN'] + ' ' + css['LO']) && open(cId);
-                }
-            }
-        }
+        move: function(nodeId, destinationId) {
+            var destination, node;
 
-        function formatNode(tr) {
-            var $cur = $(tr);
-            var id = tr.id;
+            node = this.data("treetable").tree[nodeId];
+            destination = this.data("treetable").tree[destinationId];
+            this.data("treetable").move(node, destination);
 
-            //-------------下面一大段都是获取$preSpan---------
-            if (cMap[id] == 0) {
-                //如果是顶级节点，则没有prev_sp
-                var $preSpan = $('<span class="prev_sp"></span>');
+            return this;
+        },
+
+        node: function(id) {
+            return this.data("treetable").tree[id];
+        },
+
+        removeNode: function(id) {
+            var node = this.data("treetable").tree[id];
+
+            if (node) {
+                this.data("treetable").removeNode(node);
             } else {
-                //先判断是否有上一个兄弟节点
-                if (!$cur.attr('isFirstOne')) {
-                    var $preSpan = $('#' + $cur.attr('prevId'), $treeTable).children("td").eq(opts.column).find('.prev_sp').clone();
-                } else {
-                    var $parent = $('#' + cMap[id], $treeTable);
-                    //没有上一个兄弟节点，则使用父节点的prev_sp
-                    var $preSpan = $parent.children("td").eq(opts.column).find('.prev_sp').clone();
+                throw new Error("Unknown node '" + id + "'");
+            }
 
-                    //如果父亲后面没有兄弟，则直接加空白，若有则加竖线
-                    if ($parent.attr('isLastOne')) {
-                        $preSpan.append('<span class="' + css['N'] + ' ' + css['B'] + '"></span>');
-                    } else {
-                        $preSpan.append('<span class="' + css['N'] + ' ' + css['V'] + '"></span>');
+            return this;
+        },
+
+        reveal: function(id) {
+            var node = this.data("treetable").tree[id];
+
+            if (node) {
+                node.reveal();
+            } else {
+                throw new Error("Unknown node '" + id + "'");
+            }
+
+            return this;
+        },
+
+        sortBranch: function(node, columnOrFunction) {
+            var settings = this.data("treetable").settings,
+                prepValue,
+                sortFun;
+
+            columnOrFunction = columnOrFunction || settings.column;
+            sortFun = columnOrFunction;
+
+            if ($.isNumeric(columnOrFunction)) {
+                sortFun = function(a, b) {
+                    var extractValue, valA, valB;
+
+                    extractValue = function(node) {
+                        var val = node.row.find("td:eq(" + columnOrFunction + ")").text();
+                        // Ignore trailing/leading whitespace and use uppercase values for
+                        // case insensitive ordering
+                        return $.trim(val).toUpperCase();
                     }
-                }
-            }
-            //------------------------------------------------
 
-            if ($cur.attr('hasChild')) {
-                //如果有下一个节点，并且下一个节点的父亲与当前节点的父亲相同，则说明该节点不是最后一个节点
-                var className = $cur.attr('isLastOne') ? css['LS'] : css['S'];
-                className = css['AN'] + ' ' + className;
-            } else {
-                var className = css['N'] + ' ' + ($cur.attr('isLastOne') ? css['LL'] : css['L']);
+                    valA = extractValue(a);
+                    valB = extractValue(b);
+
+                    if (valA < valB) return -1;
+                    if (valA > valB) return 1;
+                    return 0;
+                };
             }
 
-            var $td = $cur.children("td").eq(opts.column);
-            $td.prepend('<span arrow="true" class="' + className + '"></span>').prepend($preSpan);
-        };
+            this.data("treetable").sortBranch(node, sortFun);
+            return this;
+        },
 
-        $treeTable.addChilds = function(trsHtml) {
-            var $trs = $(trsHtml);
-            if (!$trs.length) { return false; }
-
-            var pId = $($trs[0]).attr('pId');
-            if (!pId) { return false; }
-
-            //插入到最后一个孩子后面，或者直接插在父节点后面
-            var insertId = pMap[pId] && pMap[pId][pMap[pId].length - 1] || pId;
-            $('#' + insertId, $treeTable).after($trs);
-            initRelation($trs);
-        };
-
-        return $treeTable;
+        unloadBranch: function(node) {
+            this.data("treetable").unloadBranch(node);
+            return this;
+        }
     };
-})(jQuery);
 
+    $.fn.treetable = function(method) {
+        if (methods[method]) {
+            return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+        } else if (typeof method === 'object' || !method) {
+            return methods.init.apply(this, arguments);
+        } else {
+            return $.error("Method " + method + " does not exist on jQuery.treetable");
+        }
+    };
+
+    // Expose classes to world
+    this.TreeTable || (this.TreeTable = {});
+    this.TreeTable.Node = Node;
+    this.TreeTable.Tree = Tree;
+})(jQuery);

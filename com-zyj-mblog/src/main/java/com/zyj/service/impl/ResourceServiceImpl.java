@@ -1,10 +1,14 @@
 package com.zyj.service.impl;
 
 import com.zyj.dao.ResourceMapper;
+import com.zyj.dao.RoleResourceMapper;
 import com.zyj.model.Resource;
+import com.zyj.model.ResourceExample;
+import com.zyj.model.RoleResourceExample;
 import com.zyj.service.IResourceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
@@ -23,7 +27,8 @@ public class ResourceServiceImpl implements IResourceService {
     @Autowired
     private ResourceMapper resourceMapper;
 
-
+    @Autowired
+    private RoleResourceMapper roleResourceMapper;
 
     //tree
     @Override
@@ -48,6 +53,33 @@ public class ResourceServiceImpl implements IResourceService {
     @Override
     public List<Resource> selectAll() {
         return resourceMapper.selectList();
+    }
+
+    @Override
+    @Transactional
+    public Resource save(Resource resource) {
+        resourceMapper.insertSelective(resource);
+        return resource;
+    }
+
+    @Override
+    @Transactional
+    public Resource update(Resource resource) {
+        resourceMapper.updateByPrimaryKeySelective(resource);
+        return resource;
+    }
+
+    @Override
+    @Transactional
+    public void deleteByIds(List<Integer> ids) {
+        ResourceExample example = new ResourceExample();
+        example.createCriteria().andIdIn(ids);
+        resourceMapper.deleteByExample(example);
+
+        //删除角色资源的关联关系
+        RoleResourceExample roleResourceExample = new RoleResourceExample();
+        roleResourceExample.createCriteria().andResourceIdIn(ids);
+        roleResourceMapper.deleteByExample(roleResourceExample);
     }
 
     //菜单

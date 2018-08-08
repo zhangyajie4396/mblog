@@ -21,4 +21,11 @@ public interface IResourceService {
     //查询所有资源
     List<Resource> selectAll();
 
+    Resource save(Resource resource);
+
+    Resource update(Resource resource);
+
+    //删除对象为子级时参数是子级id,删除对象为父级时是父级id跟子级id的集合
+    void deleteByIds(List<Integer> ids);
+
 }

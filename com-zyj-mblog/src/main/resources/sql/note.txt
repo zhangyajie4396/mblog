@@ -30,3 +30,6 @@ http://ydm1024.com/ydm/index/getPage?pageName=page/codeDetails&id=10605
 
 //bootstratp样式
 https://v2.bootcss.com
+
+//权限
+https://blog.csdn.net/code__code/article/details/53885510

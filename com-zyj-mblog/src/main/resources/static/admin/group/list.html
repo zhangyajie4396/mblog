@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="app" xmlns:th="http://www.thymeleaf.org">
+<body style="height: 80%">
+<div id="toolbar" class="btn-group">
+    <button id="btn_add" type="button" class="btn btn-default" onclick="addGroupFun()">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+    </button>
+    <button id="btn_edit" type="button" class="btn btn-default" onclick="batchDelFun()">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+    </button>
+</div>
+<div style="height: 100%">
+    <table id="table" ></table>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">新增</h4>
+            </div>
+            <form role="form" id="form">
+                <div class="modal-body">
+                    <input type="text" hidden="hidden" name="id" id="id">
+                    <div class="form-group">
+                        <label for="code">编码</label>
+                        <input type="text" name="code" class="form-control" id="code" placeholder="编码">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">名称</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="名称">
+                    </div>
+                    <div class="form-group">
+                        <label for="status">状态</label>
+                        <select id="status" class="form-control selectpicker" >
+                            <option value='1'>显示</option>
+                            <option value='0'>隐藏</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                    <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+                </div>
+        </div>
+    </div>
+</div>
+
+<script src="/resources/common/admin/group/groupManage.js"></script>
+</body>
+</html>
